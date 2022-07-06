@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.header{
+    width: 100%;
+    max-height: 75vh;
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.8)), url('/IMG/IN-en-20220627-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    border-bottom: 5px solid #222222;
+    
+}
+
+.header nav{
+    padding: 20px 0;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav .logo-img img{
+    width: 150px;
+}
+
+.header nav .nav-btn-gr{
+    display: flex;
+    column-gap: 1.5rem;
+    color: #fff;
+}
+ 
+
+.nav-sign-in-btn{
+    background-color: rgb(255, 0, 0);
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-lang-btn{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.nav-lang-btn i{
+    margin-right: 3px;
+}
+
+.nav-btn-gr select
+{
+    background: transparent;
+    color: #fff;
+    border: 0;
+}
+
+.nav-lang-btn select option{
+    background-color: #303030;
+    margin-top: 10px;
+}
+
+.header-txt-cointainer{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 100px 5%;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+
+.header-txt-gr h1{
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 15px;
+}
+
+.header-txt-gr h3{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 200;
+}
+
+.header-txt-gr p{
+    margin-bottom: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 600px;
+    position: relative;
+}
+
+.input-div input{
+    padding: 10px;
+    outline: none;
+    height: 100%;
+    flex-basis: 70%;
+}
+
+.input-div .get-started-btn{
+    flex-basis: 30%;
+    cursor: pointer;
+    background-color: #e40813;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+
+.input-div .get-started-btn:hover{
+    background-color: #f30612;
+}
+
+
+.place_holder{
+    position: absolute;
+    color: rgb(68, 67, 67);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+}
+
+.input-div:active .place_holder{
+    top: 2%;
+}
+
+
+#hide_btn{
+    margin-top: 35px;
+    background-color: #e40813;
+    padding: 8px 10px;
+    font-size: 17px;
+    display: none;
+}
+
+
+/* SUB SECTION */
+
+.sub-sec-div-container{
+    border-top: 5px solid #222222;
+    border-bottom: 5px solid #222222;
+    background: #000;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.sub-sec-div-inner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.left-text-gr{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-text{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.desc-para{
+    font-size: 25px;
+}
+
+.right-img{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.sub-sec-img{
+    width: 400px;
+}
+
+.vid-con{
+    position: relative;
+}
+
+.feature__backgroud__video__container{
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    transform: translateX(2%);
+    z-index: -1;
+}
+
+.feature__backgroud__video{
+    width: 300px;
+}
+
+#mob-img{
+    width: 450px;
+}
+
+.down-text-div{
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    background-color: #000;
+    padding: 4px 5px;
+    align-items: center;
+    box-shadow: 0 0 2em 0 #000;
+    border: 2px solid rgba(255,255,255,.25);
+    border-radius: 0.75rem;
+    min-width: 50%;
+}
+
+#stanr-t-img{
+    width: 3rem;
+    flex: 0;
+    margin-right: 1rem;
+}
+
+.download-txt{
+    flex: 1;
+    flex-grow: 1;  
+    margin-right: 1rem;  
+}
+
+.sec-txt{
+    color: #0071d5;
+}
+
+#gif{
+    width: 3rem;
+    flex: 1;
+    flex: 0;
+}
+
+#download-h2-txt{
+    padding-right: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#device-pile-in{
+    width: 400px;
+    z-index: 1;
+}
+
+#sec-vid-con{
+    position: absolute;
+    top: 20;
+    
+}
+
+#second-vid{
+    width: 250px;
+    z-index: -1;
+}
+
+#child-img{
+    width: 400px;
+}
+
+#vid2-con{
+    top: 8%;
+    left: 16%;
+}
+
+#vid2{
+    width: 250px;
+}
+
+
+
+/* FAQ */
+#faq-div{
+    justify-content: center;
+    padding: 50px 0 70px;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+#faq-div .main-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+.qna-div-gr{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
+.question-div{
+    background-color: #303030;
+    padding:15px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.question-div h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.question-div i{
+    cursor: pointer;
+}
+
+#footer-sub{
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.hidden{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+/* FOOTER */
+#footer-div{
+    /* background-color: #fff; */
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 12px;
+    color: #757353;
+    margin-bottom: 40px;
+}
+
+.list-con-footer{
+    width: 70%;
+    padding: 10px 50px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 50px;
+}
+
+.list-footer li{
+    margin-bottom: 10px;
+}
+
+.list-footer li a{
+    color: #757353;
+}
+
+.list-footer li a:hover{
+    text-decoration: underline;
+}
+
+#footer-lang{
+    padding: 10px 20px;
+    border: 1px solid #757353;
+}
+
+#net-in{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1220px){
+    .list-con-footer{
+        width: 85%;
+    }
+}
+
+
+@media (max-width:1050px){
+    .sub-sec-div-inner-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-text-gr{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .desc-para{
+        text-align: center;
+        /* width: 1000px; */
+    }
+    .sub-sec-img{
+        width: 500px;
+    }
+    .feature__backgroud__video__container{
+        left: 75px;
+    }
+    .feature__backgroud__video{
+        width: 380px;
+    }
+
+    #download-h2-txt{
+        order: 1;
+        text-align: center;
+    }
+    #div2-img{
+        order: 2;
+    }
+
+
+    #device-pile-in{
+        margin-top: 20px;
+    }
+    
+    #sec-vid-con{
+        left: 70;
+        top: 40;
+        transform: translate(40);
+    }
+
+    #child-img{
+        margin-top: 20px;
+    }
+
+    #child-text{
+        order: 1;
+    }
+
+    #children-img-div{
+        order: 2;
+    }
+
+    .qna-div-gr{
+        width: 70%;
+    }
+    .feature__backgroud__video__container{
+        left: 0;   
+    }
+
+    .feature__backgroud__video__container{
+        top: 21%;
+        left: 12%;
+        transform: translateX(2%);
+    }
+    
+    .feature__backgroud__video{
+        width: 360px;
+    }
+
+    
+    #vid2-con{
+        top: 13%;
+        left: 16%;
+    }
+
+    .list-con-footer{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:950px){
+    .input-div input{
+        flex:100%;
+    }   
+    .input-div .get-started-btn{
+        display: none;
+    }
+    #hide_btn{
+        display: inline-block;
+    }
+    
+    .list-con-footer{
+        width: 100%;
+    }
+}
+
+@media (max-width:850px){
+    .list-con-footer{
+        grid-template-columns: auto auto ;
+    }
+}
+
+@media (max-width:700px){
+    .down-text-div{
+        min-width: 60%;
+    }
+    .qna-div-gr{
+        width: 80%;
+    }
+}
+
+@media(max-width:680px){
+    .input-div{
+        width: 500px;
+        height: 90%;
+    }
+    .download-txt{
+        width:150px;
+    }
+}
+
+
+
+@media (max-width:600px) {
+    .header nav .logo-img img{
+        width: 100px;
+    }    
+    .header-txt-gr h1{
+        font-size: 2rem;
+    }    
+    .main-text{
+        font-size: 30px;
+    }    
+    .desc-para{
+        font-size: 20px;
+    }    
+    .sub-sec-img{
+        width: 350px;
+    }
+    .input-div{
+        width: 500px;
+        height: 70%;
+    }    
+    .feature__backgroud__video{
+        width: 280px;
+    }
+    .qna-div-gr{
+        width: 90%;
+    }
+}    
+
+@media (max-width:525px){
+    .input-div{
+        width: 395px;
+    }
+
+    #footer-div{
+        width: 100%;
+    }
+}
+
+@media (max-width:460px){
+    #stanr-t-img{
+        height: 2rem;
+    }   
+    #mob-img{
+        width: 300px;
+    }
+    #device-pile-in{
+        width: 280px;;
+    }
+    #child-img{
+        width: 280px;
+    }
+
+    #child-text .main-text{
+        text-align: center;
+    }
+    .qna-div-gr{
+        width: 100%;
+    }
+
+     #vid2{
+        width: 182px;
+    }
+}
+
+@media (max-width:426px){
+    .nav-lang-btn,
+.nav-sign-in-btn{
+    font-size: 15px;
+}
+.header-txt-gr h1{
+    font-size: 1.8rem;
+}
+
+.header-txt-gr h3{
+    margin-bottom: 10px;
+}
+
+.input-div{
+    width: 290px;
+    height: 70%;
+}
+.sub-sec-img{
+    width: 280px;
+}
+
+.qna-div-gr h3{
+    font-size: 14px;
+}
+
+#footer-sub{
+    font-size: 14px;
+}
+
+.feature__backgroud__video__container{
+    /* left: 13%; */
+    transform: translateX(2%);
+}
+
+.feature__backgroud__video{
+    width: 220px;
+}
+}
+
